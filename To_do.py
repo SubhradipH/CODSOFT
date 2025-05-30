@@ -6,7 +6,7 @@ from datetime import datetime
 class To_do:
     def __init__(self, root):
         self.root = root
-        self.root.title("📝 Personal To-Do List")
+        self.root.title("Personal To-Do List")
         self.root.geometry("700x400")
         self.root.configure(bg="#f0f4f7")  # Light background color
 
@@ -35,10 +35,10 @@ class To_do:
         frame.pack(pady=10)
 
         # Colored buttons
-        self.create_colored_button(frame, "➕ Add Task", "#28a745", self.add_task, 0)
-        self.create_colored_button(frame, "✔️ Mark Completed", "#17a2b8", self.mark_completed, 1)
-        self.create_colored_button(frame, "🗑️ Delete Task", "#dc3545", self.delete_task, 2)
-        self.create_colored_button(frame, "❌ Exit", "#6c757d", root.quit, 3)
+        self.create_colored_button(frame, " Add Task", "#28a745", self.add_task, 0)
+        self.create_colored_button(frame, " Mark Completed", "#17a2b8", self.mark_completed, 1)
+        self.create_colored_button(frame, " Delete Task", "#dc3545", self.delete_task, 2)
+        self.create_colored_button(frame, " Exit", "#6c757d", root.quit, 3)
 
     def create_colored_button(self, parent, text, color, command, column):
         button = tk.Button(parent, text=text, command=command,
